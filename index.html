@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="icon" href="./img/logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="web.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  
+  <!-- {{>navber}} -->
+  <header id="home">
+  <nav class="navbar  navbar-expand-lg navbar-light bg-light border-bottom fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-2 mb-2  mb-lg-0 text-start">
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#home"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About"><b>About</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <b> Services</b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#Education"><b>Education</b></a></li>
+              <li><a class="dropdown-item" href="#Categories"><b>Categories</b></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#team"><b>Our Team</b></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login/login.html" tabindex="-1" aria-disabled="true"><b>login</b>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register/register.html" tabindex="-1" aria-disabled="true"><b>Register</b>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control ms-5" type="search" placeholder="Search item" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">EnrollNow</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- carousel -->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./img/istockphoto-171306436-612x612.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block text-light">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/campus_place.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block text-light">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./img/V1.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block text-light">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/NCC_achieve.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block text-light">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </header>
+  
+  <!-- About -->
+
+  <section class="About" id="About">
+    <div class="container text-center mt-3">
+      <h1  data-aos="fade-up" data-aos-offset="200"><i>About <span class="text-primary " >me</span></i></h1>
+      <hr/ class="w-25 m-auto mb-3">
+    </div>
+  </section>
+      
+     <!-- center-point -->
+<section >
+     <div class="row">
+     <div class="center-point col-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in" data-aos-offset="200">
+        <div class="text">
+          <!-- <span class="Online"> <b>Online Learning Platform </b></span> -->
+          <b><span class="Online text sec-text ms-0"></span></b> <br> <br>
+          <h1> <b>Master The Skills <br>Drive Your Career.</h1>
+          <p class="skill12">Through a combination of lectures, readings, and discussions, students <br>
+            will gain a solid foundation in educational psychology. </b></p>
+          <button class="btn btn-outline-primary"> <b> View All Course </b></button>
+        </div>
+     </div>
+     
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end border-none"  data-aos="fade-right" data-aos-offset="200">
+          <img src="./img/banner-img.png" alt=""  class="image img-fluid img-thumbnail" >
+        </div>
+    
+      </div>
+</section>
+
+
+      <!-- Conference on Education -->
+    <section class="Education py-5 " id="Education">
+      <div class="container">
+
+        <span class="Online"> <b>Conference on Education </b></span> <br> <br>
+        <h1>Upcoming Events</h1>
+        <div class="row mt-5 img0 "data-aos="zoom-in"  data-aos-offset="200">
+        <div class="img1 col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card ms-4" style="width: 18rem;">
+            <div class="first_img">
+            <img src="./img/1.jpg" class="img2 card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Skill-Building</h5>
+              <p class="card-text">These are Desingned to Prvide
+                Hands Training and skill-Building.</p>
+              <a href="#" class="btn btn-primary">Get Ticket</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="img1 col-md-4 col-lg-4 col-12">
+          <div class="card ms-4" style="width: 18rem;">
+            <div class="first_img">
+            <img src="./img/2.jpg" class="img2 card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Every Student</h5>
+              <p class="card-text">Personalized Learning & Meeting The Needs of Every Student..</p>
+              <a href="#" class="btn btn-primary">Get Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="img1 col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card ms-4" style="width: 18rem;">
+            <div class="first_img">
+            <img src="./img/3.jpg" class="img2 card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Development</h5>
+              <p class="card-text">The Whole Child Fostering Social and Emotional Development.</p>
+              <a href="#" class="btn btn-primary">Get Ticket</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </section>
+    
+
+      <!-- our service -->
+      <section class="Education py-5 " id="Categories">
+        <div class="container">
+  
+          <span class="Online"> <b>Browse Categories </b></span> <br> <br>
+          <h1>Popular Categories</h1>
+          <div class="row mt-5 img0"data-aos="zoom-in-up"  data-aos-offset="200">
+          <div class="img12 col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card ms-4" style="width: 18rem;">
+              <div class="first_img">
+              <img src="./img/6.jpg" class="img2 card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <i class="bi bi-code-slash bg-primary p-2 text-white rounded"></i>
+                <h5 class="card-title mt-3">Web Development</h5>
+                <p class="card-text">These are Desingned to Prvide
+                  Hands Training and skill-Building.</p>
+                <a href="#" class="btn btn-primary">Book Now!</a>
+              </div>
+            </div>
+  
+          </div>
+          <div class="img12 col-md-4 col-lg-4 col-12">
+            <div class="card ms-4" style="width: 18rem;">
+              <div class="first_img">
+              <img src="./img/5.jpg" class="img2 card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <i class="bi bi-airplane bg-primary p-2 text-white rounded"></i>
+                <h5 class="card-title mt-3">Digital Marketing</h5>
+                <p class="card-text">Personalized Learning & Meeting The Needs of Every Student..</p>
+                <a href="#" class="btn btn-primary">Book Now!</a>
+              </div>
+            </div>
+          </div>
+          <div class="img12 col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="card ms-4" style="width: 18rem;">
+              <div class="first_img">
+              <img src="./img/4.jpg" class="img2 card-img-top" alt="...">
+            </div>
+              <div class="card-body">
+                <i class="bi bi-balloon bg-primary p-2 text-white rounded"></i>
+                <h5 class="card-title mt-3">It & Software</h5>
+                <p class="card-text">The Whole Child Fostering Social and Emotional Development.</p>
+                <a href="#" class="btn btn-primary">Book Now!</a>
+              </div>
+            </div>
+          </div>
+          <!-- row2 -->
+          <div class="container">
+          <div class="row mt-5 img0" data-aos="zoom-in-down"  data-aos-offset="200">
+            <div class="img12 col-sm-12 col-md-4 col-lg-4 col-12 ">
+              <div class="card ms-4" style="width: 18rem;">
+                <div class="first_img">
+                <img src="./img/images.jpeg" class="img2 card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <i class="bi bi-filetype-js bg-primary p-2 text-white rounded mb-2"></i>
+                  <h5 class="card-title mt-3">Javascript Web Development</h5>
+                  <p class="card-text">These are Desingned to Prvide
+                    Hands Training and skill-Building.</p>
+                  <a href="#" class="btn btn-primary">Book Now!</a>
+                </div>
+              </div>
+    
+            </div>
+            <div class="img12 col-md-4 col-lg-4 col-12">
+              <div class="card ms-4" style="width: 18rem;">
+                <div class="first_img">
+                <img src="./img/Cross-Platform App Development.jpg" class="img2 card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <i class="bi bi-android2 bg-primary p-2 text-white rounded mb-2"></i>
+                  <h5 class="card-title mt-3">App Development</h5>
+                  <p class="card-text">Personalized Learning & Meeting The Needs of Every Student..</p>
+                  <a href="#" class="btn btn-primary">Book Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="img12 col-sm-12 col-md-4 col-lg-4 col-12">
+              <div class="card ms-4" style="width: 18rem;">
+                <div class="first_img">
+                <img src="./img/2 (1).jpg" class="img2 card-img-top" alt="...">
+              </div>
+                <div class="card-body">
+                  <i class="bi bi-menu-button-wide-fill bg-primary p-2 text-white rounded mb-2"></i>
+                  <h5 class="card-title mt-3">Graphics Design</h5>
+                  <p class="card-text">The Whole Child Fostering Social and Emotional Development.</p>
+                  <a href="#" class="btn btn-primary">Book Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          </div>
+        </section>
+  <!-- team -->
+  <section class="team my-5 text-center" id="team">
+    <div class="container">
+      <h1 data-aos="fade-up" data-aos-offset="200"><i>Our <span class="text-primary">Team</span></i></h1>
+      <hr/ class="w-25 m-auto mb-5">
+  
+      <div class="row mx-4" >
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card1"data-aos="zoom-in-left" style="width: 18rem;">
+            <div class="card-body">
+              <img src="./img/team1.png " alt="" class="img-fluid rounded-circle border border-primary p-2">
+              <h5 class="card-title mt-4">Mark Zuckerberg</h5>
+              <p class="card-text">App Development</p>
+              <a href="#" class="btn btn-primary ms-5 mb-5">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+          <div class="card1" data-aos="zoom-in"style="width: 18rem;">
+            <div class="card-body">
+              <img src="./img/team2.avif" alt="" class="img-fluid rounded-circle border border-primary p-2">
+              <h5 class="card-title mt-4">Jack line</h5>
+              <p class="card-text">Web Development</p>
+              <a href="#" class="btn btn-primary ms-5 mb-5">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+        <div class="card1 " data-aos="zoom-in-right" style="width: 18rem;">
+          <div class="card-body">
+            <img src="./img/team3.avif" alt="" class="img-fluid rounded-circle border border-primary p-2">
+            <h5 class="card-title mt-4">Bill Gates</h5>
+            <p class="card-text">Digital Marketing</p>
+            <a href="#" class="btn btn-primary ms-5 ">Read more</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+     <!-- footer -->
+     <footer class="footer my-5">
+        <div class="logo ">
+          <img src="./img/logo.png" alt="">
+          <p>Through a combination of lectures,<br> readings, discussions, students will <br> gain solid foundation in
+            <br>educational</p>
+        </div>
+        <div class="link">
+          <h4> Useful Link</h4>
+          About Eduan <br>
+          Contact <br>
+          Help Centre <br>
+          Refund <br>
+          Conditions <br>
+          Privacy Policy <br>
+        </div>
+    
+        <div class="link">
+          <h4> Categories</h4>
+          Design Skills <br>
+          Development <br>
+          Marketing <br>
+          Finance & Accounting <br>
+          IT & Software <br>
+          Sales Marketing <br>
+        </div>
+    
+        <div class="link">
+          <h4> Newsletter</h4>
+          Sign up foe our newsletter and get 34% <br>
+          off your next course. <br>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter Your Email*" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2">Subscribe</button>
+          </div>
+    
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree to the terms of use and privacy policy.</label>
+          </div>
+    
+    
+        </div>
+        <p class="Copyright disabled">Copyright © 2024 All Rights Reserved by Eduan</p>
+      </footer>
+    
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+
+
+<script>
+
+  // skills animation
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+setTimeout(() => {
+  text.textContent = "Online Learning Platform";
+}, 0);
+setTimeout(() => {
+  text.textContent = "Conference on Education";
+}, 4000);
+setTimeout(() => {
+  text.textContent = "Browse Categories";
+}, 8000);
+};
+textLoad();
+setInterval(textLoad, 12000);
+
+</Script>
+
+</html>
